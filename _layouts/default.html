@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <title>{{ site.title }} {% if page.title %}| {{ page.title }}{% endif %}</title>
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <img id="badge" src="assets/badge.png">
 
+    <nav>
+      <ul>
+        {% if page.back %} <li><a href="{{ page.back }}">⍇</a></li> {% endif %}
+        {% if page.next %} <li><a href="{{ page.next }}">⍈</a></li> {% endif %}
+      </ul>
+    </nav>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <hr>
+      <p>
+        <strong>⎄</strong>&nbsp;&nbsp; Well-structured code is a masterpiece, a
+        symphony of logic and creativity, reflecting the beauty of programming.
+        <br>Yours truly, <a href="https://www.instagram.com/insert.data"><i>Duygu</i></a>
+      </p>
+    </footer>
+  </body>
+</html>
