@@ -1,0 +1,12 @@
+# Site settings
+title: Syntax Serenity
+description: Naming Conventions Python vs R
+url: "https://dduyg.github.io"
+baseurl: "syntax-serenity" # when hosted in a subdirectory
+author: Duygu Dağdelen
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-sitemap
